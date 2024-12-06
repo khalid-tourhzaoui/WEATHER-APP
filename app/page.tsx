@@ -75,20 +75,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <footer className="py-4 flex justify-center pb-8">
-        <p className="footer-text text-sm flex items-center gap-1">
-          Made by
-          <Image src={"/logo-white.svg"} alt="logo" width={20} height={20} />
-          <a
-            href="https://thecodedealer.com"
-            target="_blank"
-            className=" text-green-300 font-bold"
-          >
-            TheCodeDealer
-          </a>
-        </p>
-      </footer>
     </main>
   );
 }

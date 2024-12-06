@@ -62,8 +62,9 @@ function DailyForecast() {
 
   return (
     <div
-      className="pt-6 px-4 h-[12rem] border rounded-lg flex flex-col gap-8
+      className="pt-6 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-8
        dark:bg-dark-grey shadow-sm dark:shadow-none col-span-full sm-2:col-span-2 md:col-span-2 xl:col-span-2"
+       style={{background:"url('https://c4.wallpaperflare.com/wallpaper/382/467/799/digital-art-artwork-abstract-red-wallpaper-thumb.jpg')"}}
     >
       <div className="h-full flex gap-10 overflow-hidden">
         {todaysForecast.length < 1 ? (
@@ -83,7 +84,7 @@ function DailyForecast() {
                         key={forecast.dt_txt}
                         className="flex flex-col gap-4 basis-[8.5rem] cursor-grab"
                       >
-                        <p className=" text-gray-300">
+                        <p className=" text-gray-300 font-bold">
                           {moment(forecast.dt_txt).format("HH:mm")}
                         </p>
                         <p>{getIcon()}</p>
