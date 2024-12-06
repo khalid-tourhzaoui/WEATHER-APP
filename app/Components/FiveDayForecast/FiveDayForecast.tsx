@@ -49,7 +49,7 @@ function FiveDayForecast() {
   }
 
   return (
-    <div className="pt-6 pb-5 px-4 flex-1 border rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
+    <div className="pt-6 pb-5 px-4 flex-1 border-2 border-white rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
         style={{background:"url('https://c4.wallpaperflare.com/wallpaper/317/630/437/artwork-simple-background-blue-stars-wallpaper-thumb.jpg')"
         }}>
       <div>

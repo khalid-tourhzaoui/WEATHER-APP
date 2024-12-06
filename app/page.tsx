@@ -61,12 +61,13 @@ export default function Home() {
                   return (
                     <div
                       key={index}
-                      className="border rounded-lg cursor-pointer dark:bg-dark-grey shadow-sm dark:shadow-none"
+                      className="border-2 border-white rounded-lg cursor-pointer dark:bg-dark-grey shadow-sm dark:shadow-none"
+                      style={{background:"url('https://c4.wallpaperflare.com/wallpaper/262/774/423/space-stars-nebula-tylercreatesworlds-wallpaper-preview.jpg')"}}
                       onClick={() => {
                         getClickedCityCords(state.lat, state.lon);
                       }}
                     >
-                      <p className="px-6 py-4">{state.name}</p>
+                      <p className="px-6 py-4 font-bold">{state.name}</p>
                     </div>
                   );
                 })}
