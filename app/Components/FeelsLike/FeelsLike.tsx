@@ -37,12 +37,13 @@ function FeelsLike() {
   const feelsLikeDescription = feelsLikeText(feels_like, temp_min, temp_max);
 
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none">
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    style={{background:"url('https://c4.wallpaperflare.com/wallpaper/319/619/676/digital-art-space-planet-stars-wallpaper-thumb.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-medium">
+        <h2 className="flex items-center gap-2 font-bold">
           {thermometer} Feels Like
         </h2>
-        <p className="pt-4 text-2xl">{kelvinToCelsius(feels_like)}°</p>
+        <p className="pt-1 text-2xl">{kelvinToCelsius(feels_like)}°</p>
       </div>
 
       <p className="text-sm">{feelsLikeDescription}</p>

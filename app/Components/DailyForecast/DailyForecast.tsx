@@ -64,7 +64,7 @@ function DailyForecast() {
     <div
       className="pt-6 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-8
        dark:bg-dark-grey shadow-sm dark:shadow-none col-span-full sm-2:col-span-2 md:col-span-2 xl:col-span-2"
-       style={{background:"url('https://c4.wallpaperflare.com/wallpaper/382/467/799/digital-art-artwork-abstract-red-wallpaper-thumb.jpg')"}}
+       style={{background:"url('https://c4.wallpaperflare.com/wallpaper/349/372/16/space-tylercreatesworlds-space-art-digital-art-wallpaper-preview.jpg')"}}
     >
       <div className="h-full flex gap-10 overflow-hidden">
         {todaysForecast.length < 1 ? (
