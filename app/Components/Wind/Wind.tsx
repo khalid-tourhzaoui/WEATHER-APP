@@ -17,10 +17,12 @@ function Wind() {
 
   return (
     <div
-      className="pt-6 pb-5 px-4 h-[12rem] border rounded-lg flex 
+      className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg flex 
     flex-col gap-3 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    style={{background:"url('https://c4.wallpaperflare.com/wallpaper/349/372/16/abstract-space-nebula-space-art-wallpaper-thumb.jpg')"}}
+
     >
-      <h2 className="flex items-center gap-2 font-medium">{wind} Wind</h2>
+      <h2 className="flex items-center gap-2 font-bold">{wind} Wind</h2>
 
       <div className="compass relative flex items-center justify-center">
         <div className="image relative">
@@ -44,7 +46,7 @@ function Wind() {
         </div>
         <p
           className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-xs
-            dark:text-white font-medium"
+            dark:text-white font-bold"
         >
           {Math.round(windSpeed)} m/s
         </p>
