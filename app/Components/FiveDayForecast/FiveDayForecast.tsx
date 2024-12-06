@@ -49,10 +49,9 @@ function FiveDayForecast() {
   }
 
   return (
-    <div
-      className="pt-6 pb-5 px-4 flex-1 border rounded-lg flex flex-col
-        justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
-    >
+    <div className="pt-6 pb-5 px-4 flex-1 border rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
+        style={{background:"url('https://c4.wallpaperflare.com/wallpaper/317/630/437/artwork-simple-background-blue-stars-wallpaper-thumb.jpg')"
+        }}>
       <div>
         <h2 className="flex items-center gap-2 font-medium">
           {calender} 5-Day Forecast for {city.name}
@@ -63,7 +62,7 @@ function FiveDayForecast() {
             return (
               <div
                 key={i}
-                className="daily-forevast py-4 flex flex-col justify-evenly border-b-2"
+                className="daily-forevast py-4 flex flex-col justify-evenly border-b-2 border-white"
               >
                 <p className="text-xl min-w-[3.5rem]">{day.day}</p>
                 <p className="text-sm flex justify-between">
