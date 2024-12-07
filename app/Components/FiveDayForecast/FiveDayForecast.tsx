@@ -53,7 +53,7 @@ function FiveDayForecast() {
         style={{background:"url('https://c4.wallpaperflare.com/wallpaper/317/630/437/artwork-simple-background-blue-stars-wallpaper-thumb.jpg')"
         }}>
       <div>
-        <h2 className="flex items-center gap-2 font-medium">
+        <h2 className="flex items-center gap-2 font-bold">
           {calender} 5-Day Forecast for {city.name}
         </h2>
 

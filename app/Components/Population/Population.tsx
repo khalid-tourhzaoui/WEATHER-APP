@@ -14,15 +14,15 @@ function Population() {
   }
 
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg font-bold flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
     style={{background:"url('https://c4.wallpaperflare.com/wallpaper/349/372/16/space-tylercreatesworlds-space-art-digital-art-wallpaper-preview.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-bold">
+        <h2 className="flex items-center gap-2">
           {people} Population
         </h2>
-        <p className="pt-2 text-2xl">{formatNumber(city.population)}</p>
+        <p className="pt-4 text-2xl">{formatNumber(city.population)}</p>
+      <p className="pt-4 text-sm">Latest UN population data for {city.name}.</p>
       </div>
-      <p className="text-sm">Latest UN population data for {city.name}.</p>
     </div>
   );
 }

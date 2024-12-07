@@ -55,10 +55,10 @@ function UvIndex() {
   const marginLeftPercentage = (uvIndexMax / 14) * 100;
 
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-5 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white font-bold rounded-lg flex flex-col gap-5 dark:bg-dark-grey shadow-sm dark:shadow-none"
     style={{background:"url('https://c4.wallpaperflare.com/wallpaper/349/372/16/space-tylercreatesworlds-space-art-digital-art-wallpaper-preview.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-bold">{sun} Uv Index</h2>
+        <h2 className="flex items-center gap-2">{sun} Uv Index</h2>
         <div className="pt-4 flex flex-col gap-1">
           <p className="text-2xl">
             {uvIndexMax}
@@ -73,9 +73,9 @@ function UvIndex() {
             className="progress"
           />
         </div>
+        <p className="pt-4 text-sm">{uvIndexCategory(uvIndexMax).protection} </p>
       </div>
 
-      <p className="text-sm">{uvIndexCategory(uvIndexMax).protection} </p>
     </div>
   );
 }
