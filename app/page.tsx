@@ -21,12 +21,10 @@ export default function Home() {
 
   const getClickedCityCords = (lat: number, lon: number) => {
     setActiveCityCoords([lat, lon]);
-    if (typeof window !== "undefined") {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-  }
 
   };
 
