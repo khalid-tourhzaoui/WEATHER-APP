@@ -21,6 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" href="/thunder-storm-day.png" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

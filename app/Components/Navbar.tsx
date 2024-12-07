@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { github } from "../utils/Icons";
-import ThemeLocation from "./ThemeLocation/ThemeLocation";
 import SearchDialog from "./SearchDialog/SearchDialog";
 import { useGlobalContext } from "../context/globalContext";
+import ThemeLocation from "./ThemeLocation/ThemeLocation";
 
 function Navbar() {
   const router = useRouter();

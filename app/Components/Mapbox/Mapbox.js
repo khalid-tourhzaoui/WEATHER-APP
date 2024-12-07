@@ -39,13 +39,13 @@ function Mapbox() {
   }
 
   return (
-    <div className="flex-1 basis-[50%] border rounded-lg">
+    <div className="flex-1 basis-[50%] border-2 border-white rounded-lg">
       <MapContainer
         center={[activeCityCords.lat, activeCityCords.lon]}
         zoom={13}
         scrollWheelZoom={false}
-        className="rounded-lg m-4"
-        style={{ height: "calc(100% - 2rem)", width: "calc(100% - 2rem)" }}
+        className="rounded-lg"
+        style={{ height: "calc(100%)", width: "calc(100%)" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

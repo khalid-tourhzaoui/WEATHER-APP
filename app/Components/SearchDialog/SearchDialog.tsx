@@ -24,7 +24,7 @@ function SearchDialog() {
         <DialogTrigger asChild>
           <Button
             variant="outline"
-            className="border bg-white inline-flex items-center justify-center text-sm font-medium hover:dark:bg-[#131313]
+            className="border bg-white inline-flex items-center justify-center text-sm font-medium
              hover:bg-slate-100  ease-in-out duration-200"
           >
             <p className="text-sm text-muted-foreground">Search Here...</p>
@@ -35,8 +35,8 @@ function SearchDialog() {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className="p-0">
-          <Command className=" rounded-lg border shadow-md">
+        <DialogContent className="p-0 border-white">
+          <Command className=" rounded-lg border  shadow-md">
             <CommandInput
               value={inputValue}
               onChangeCapture={handleInput}
