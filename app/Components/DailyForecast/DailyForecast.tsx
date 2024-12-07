@@ -24,7 +24,7 @@ function DailyForecast() {
   if (!forecast || !weather) {
     return <Skeleton className="h-[12rem] w-full" />;
   }
-
+  console.log(forecast)
   const today = new Date();
   const todayString = today.toISOString().split("T")[0];
 

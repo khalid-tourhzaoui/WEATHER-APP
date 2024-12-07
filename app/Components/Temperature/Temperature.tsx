@@ -67,22 +67,22 @@ function Temperature() {
   }, [timezone]);
 
   return (
-    <div className="pt-6 pb-5 px-4 border-2 border-white rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
+    <div className="pt-6 pb-5 px-4 border-2 border-white font-bold rounded-lg flex flex-col justify-between dark:bg-dark-grey shadow-sm dark:shadow-none"
     style={{background:"url('https://c4.wallpaperflare.com/wallpaper/262/774/423/space-stars-nebula-tylercreatesworlds-wallpaper-preview.jpg')"}}>
       <p className="flex justify-between items-center">
-        <span className="font-medium">{currentDay}</span>
-        <span className="font-medium">{localTime}</span>
+        <span className="">{currentDay}</span>
+        <span className="">{localTime}</span>
       </p>
-      <p className="pt-2 font-bold flex gap-1">
+      <p className="pt-2 flex gap-1">
         <span>{name}</span>
         <span>{navigation}</span>
       </p>
-      <p className="py-10 text-9xl font-bold self-center">{temp}°</p>
+      <p className="py-10 text-9xl self-center">{temp}°</p>
 
       <div>
         <div>
           <span>{getIcon()}</span>
-          <p className="pt-2 capitalize text-lg font-medium">{description}</p>
+          <p className="pt-2 capitalize text-lg">{description}</p>
         </div>
         <p className="flex items-center gap-2">
           <span>Low: {minTemp}°</span>

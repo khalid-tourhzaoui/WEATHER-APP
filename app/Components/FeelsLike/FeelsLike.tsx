@@ -22,13 +22,13 @@ function FeelsLike() {
     const avgTemp = (minTemo + maxTemp) / 2;
 
     if (feelsLike < avgTemp - 5) {
-      return "Feels significantly colder than actual temperature.";
+      return "Colder than actual temperature.";
     }
     if (feelsLike > avgTemp - 5 && feelsLike <= avgTemp + 5) {
       return "Feels close to the actual temperature.";
     }
     if (feelsLike > avgTemp + 5) {
-      return "Feels significantly warmer than actual temperature.";
+      return "Warmer than actual temperature.";
     }
 
     return "Temperature feeling is typical for this range.";
@@ -37,16 +37,16 @@ function FeelsLike() {
   const feelsLikeDescription = feelsLikeText(feels_like, temp_min, temp_max);
 
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
-    style={{background:"url('https://c4.wallpaperflare.com/wallpaper/319/619/676/digital-art-space-planet-stars-wallpaper-thumb.jpg')"}}>
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white font-bold rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    style={{background:"url('https://c1.wallpaperflare.com/preview/195/577/292/starfield-stars-space-universe-thumbnail.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-bold">
+        <h2 className="flex items-center gap-2">
           {thermometer} Feels Like
         </h2>
-        <p className="pt-1 text-2xl">{kelvinToCelsius(feels_like)}°</p>
+        <p className="pt-3 text-2xl">{kelvinToCelsius(feels_like)}°</p>
+        <p className="pt-2 text-sm">{feelsLikeDescription}</p>
       </div>
 
-      <p className="text-sm">{feelsLikeDescription}</p>
     </div>
   );
 }

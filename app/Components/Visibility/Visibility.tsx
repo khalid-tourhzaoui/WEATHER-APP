@@ -23,15 +23,15 @@ function Visibility() {
     return "Unavailable: Visibility data not available";
   };
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none">
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white font-bold rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    style={{background:"url('https://c1.wallpaperflare.com/preview/195/577/292/starfield-stars-space-universe-thumbnail.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-medium">
+        <h2 className="flex items-center gap-2">
           {eye} Visibility
         </h2>
         <p className="pt-4 text-2xl">{Math.round(visibility / 1000)} km</p>
+        <p className="pt-4 text-sm">{getVisibilityDescription(visibility)}.</p>
       </div>
-
-      <p className="text-sm">{getVisibilityDescription(visibility)}.</p>
     </div>
   );
 }

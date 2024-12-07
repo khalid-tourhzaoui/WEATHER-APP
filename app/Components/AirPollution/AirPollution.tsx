@@ -33,11 +33,11 @@ function AirPollution() {
        dark:bg-dark-grey shadow-sm dark:shadow-none col-span-full sm-2:col-span-2 md:col-span-2 xl:col-span-2"
        style={{background:"url('https://c4.wallpaperflare.com/wallpaper/349/372/16/abstract-space-nebula-space-art-wallpaper-thumb.jpg')"}}
     >
-      <h2 className="flex items-center gap-2 ">
+      <h2 className="flex items-center gap-2 text-xl font-bold">
         {thermo}Air Pollusion
       </h2>
       <Progress value={airQualityIndex} max={100} className="progress" />
-      <p className="text-md font-bold">Air quality is {filteredIndex?.description}. </p>
+      <p className="text-xl font-bold">Air quality is {filteredIndex?.description}. </p>
     </div>
   );
 }

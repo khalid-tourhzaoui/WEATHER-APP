@@ -31,15 +31,16 @@ function Pressure() {
   };
 
   return (
-    <div className="pt-6 pb-5 px-4 h-[12rem] border rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none">
+    <div className="pt-6 pb-5 px-4 h-[12rem] border-2 border-white font-bold rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-sm dark:shadow-none"
+    style={{background:"url('https://c1.wallpaperflare.com/preview/195/577/292/starfield-stars-space-universe-thumbnail.jpg')"}}>
       <div className="top">
-        <h2 className="flex items-center gap-2 font-medium">
+        <h2 className="flex items-center gap-2">
           {gauge} Pressure
         </h2>
         <p className="pt-4 text-2xl">{pressure} hPa</p>
+        <p className="pt-4 text-sm">{getPressureDescription(pressure)}.</p>
       </div>
 
-      <p className="text-sm">{getPressureDescription(pressure)}.</p>
     </div>
   );
 }
