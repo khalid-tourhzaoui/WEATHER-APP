@@ -2,9 +2,9 @@
 
 Welcome to the **Advanced Weather App**! This comprehensive weather application leverages the OpenWeather API to deliver accurate and detailed weather data, including air pollution, UV index, and multi-day forecasts. Built with **React.js** and **Next.js**, the app is fast, responsive, and customizable.
 
-![Weather App Screenshot](public/Desktop.png)
+![Weather App Screenshot](public/Desktop.jpg)
 
-## **Visit the App:** [Advanced Weather App](https://your-weather-app-url.vercel.app/)
+## **Visit the App:SONN** [Advanced Weather App](https://your-weather-app-url.vercel.app/)
 
 ---
 
