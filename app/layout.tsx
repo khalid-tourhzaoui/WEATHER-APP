@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   description: "Stay updated with real-time weather forecasts, temperature, humidity, air quality, and more.",
   keywords: ["Weather App", "Weather Forecast", "Real-Time Weather", "Local Weather"],
   authors: [{ name: "KHALID", url: "https://khalid-tourhzaoui.vercel.app/" }],
-  viewport: "width=device-width, initial-scale=1", // Ensures proper scaling
 };
 
 
